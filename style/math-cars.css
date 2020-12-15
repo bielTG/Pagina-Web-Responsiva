@@ -1,0 +1,327 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	background-image: url("../imagens/fundo.png");
+	background-repeat: no-repeat;
+}
+input{
+	background-color: lightCoral;
+	width:95px;
+	height: 80px;
+	border: 2px solid black;
+	font-size: 50px;
+	text-align: center;
+}
+span{
+	background-color: brown;
+	font-size: 40px;
+	position: absolute;
+	top: 35%; /*posiciona na metade da tela*/
+	left: 10%;
+	display: none;
+	text-align: center;
+}
+#aviso1{
+	width: 92%;
+	position: absolute;
+	top: 10%;
+	margin-left: -6%;
+	text-align: center;
+	display: block;
+}
+#inicio{
+	position: absolute;
+	background-image: url('../imagens/telaInicial.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#textoInicio{
+	display: block;
+	background-color: transparent;
+	font-size: 30px;
+	color: red;
+	position: absolute;
+	left: 58%;
+	top: 25%;
+}
+#jogo{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url("../imagens/fundo.png");
+	background-size: 100% 100%;
+}
+#red{
+	background-color: lightCoral;
+	position: absolute;	
+	width: 170px;
+	height: 150px;
+	top: 360px;
+	left: 30px;
+	border: 2px solid black;
+}
+#black{
+	background-color: brown;
+	position: absolute;	
+	width: 170px;
+	height: 150px;
+	top: 360px;
+	left: 220px;
+	border: 2px solid black;
+}
+#yellow{
+	background-color: lightCoral;
+	position: absolute;	
+	width: 170px;
+	height: 150px;
+	top: 360px;
+	left: 415px;
+	border: 2px solid black;
+}
+#pink{
+	background-color: lightCoral;
+	position: absolute;	
+	width: 170px;
+	height: 150px;
+	top: 360px;
+	left: 610px;
+	border: 2px solid black;
+}
+#green{
+	background-color: lightCoral;
+	position: absolute;	
+	width: 170px;
+	height: 150px;
+	top: 360px;
+	left: 805px;
+	border: 2px solid black;
+}
+#blue{
+	background-color: lightCoral;
+	position: absolute;	
+	width: 170px;
+	height: 150px;
+	top: 360px;
+	left: 1000px;
+	border: 2px solid black;
+}
+#iniciar{
+	position: absolute;	
+	top: 0px;
+	left: 10px;
+	width: 50px;
+	height: 50px;	
+}
+
+#nivelTexto{
+	background-color: lightCoral;
+	height:30px;
+	font-size: 38px;
+	border: none;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: black;
+}
+#nivel{
+	width:40px;
+	height:30px;
+	background-color: lightCoral;
+	font-size: 38px;
+	border: none;
+	position: absolute;
+	top: 10px;
+	left: 115px;
+	color: black;
+}
+#pause{
+	background-color: lightCoral;
+	position: absolute;
+	width: 50px;
+	top: 10px;
+	left: 95%;
+}
+#numero1{
+	position: absolute;
+	top: 70px;
+	left: 20px;
+}
+#operador{
+	position: absolute;
+	top: 70px;
+	left:110px;
+}
+#numero2{
+	position: absolute;
+	top: 70px;	
+	left:200px;
+}
+#igual{
+	position: absolute;
+	top: 70px;	
+	left:290px;
+}
+#resposta{
+	position: absolute;
+	top: 70px;	
+	left: 380px; 
+}
+
+.chegadas{
+	position: absolute;
+	width: 11%;
+	top: 3%;
+	height: 20%;
+	background-image: url('../imagens/chegada.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.pistas{
+	position: absolute;
+	width: 11%;
+	height: 75%;
+	top: 20%;
+	background-image: url('../imagens/pista.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#pista1, #chegada1{
+	left: 40%;
+}
+
+#pista2, #chegada2{
+	left: 62%;
+}
+
+.carros{
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 150px;
+	height: 30%;
+	top: 70%;
+	transition: top 0.5s linear;
+	display: block;
+}
+#carro1, #carro2{
+	background-image: url("../imagens/black.png");
+}
+
+#num7 {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+#num8 {
+	position: absolute;
+	top: 200px;
+	left: 205px;
+}
+#num9 {
+	position: absolute;
+	top: 200px;
+	left: 310px;
+}
+#num4 {
+	position: absolute;
+	top: 290px;
+	left: 100px;
+}
+#num5 {
+	position: absolute;
+	top: 290px;
+	left: 205px;
+}
+#num6 {
+	position: absolute;
+	top: 290px;
+	left: 310px;
+}
+#num1 {
+	position: absolute;
+	top: 380px;
+	left: 100px;
+}
+#num2 {
+	position: absolute;
+	top: 380px;
+	left: 205px;
+}
+#num3 {
+	position: absolute;
+	top: 380px;
+	left: 310px;
+}
+#apagar {
+	position: absolute;
+	top: 470px;
+	left: 100px;
+}
+#num0 {
+	position: absolute;
+	top: 470px;
+	left: 205px;
+}
+#enviar {
+	position: absolute;
+	top: 470px;
+	left: 310px;
+}
+.botao {
+	position: absolute;
+	top: 90%;
+	left: 80%;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff1100), color-stop(1, #453837) );
+	background:-moz-linear-gradient( center top, #ff1100 5%, #453837 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1100', endColorstr='#453837');
+	background-color:#ff1100;
+	border-top-left-radius:13px;
+	border-top-right-radius:13px;
+	border-bottom-right-radius:13px;
+	border-bottom-left-radius:13px;
+	text-indent:0;
+	border:1px solid black;
+	font-size:24px;
+	font-weight:bold;
+	height:50px;
+	width:200px;
+	text-align:center;
+	text-shadow:1px 0px 0px #810e05;
+}
+.botao:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #453837), color-stop(1, #ff1100) );
+	background:-moz-linear-gradient( center top, #453837 5%, #ff1100 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#453837', endColorstr='#ff1100');
+	background-color:#453837;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+@media (max-width: 540px){
+    .pistas {
+		position: absolute;
+		width: 20%;
+		height: 75%;
+		top: 20%;
+		background-image: url('../imagens/pista.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+    }
+}
